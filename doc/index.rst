@@ -147,7 +147,15 @@ Flashing
 
       .. zephyr-app-commands::
          :zephyr-app: samples/basic/blinky
-         :board: adafruit_feather_nrf52840
+         :board: adafruit_feather_nrf52840_express
+         :goals: build
+         :compact:
+
+   .. group-tab:: Express with UF2
+
+      .. zephyr-app-commands::
+         :zephyr-app: samples/basic/blinky
+         :board: adafruit_feather_nrf52840_express_uf2
          :goals: build
          :compact:
 
@@ -159,7 +167,7 @@ Flashing
          :goals: build
          :compact:
 
-#. Connect the board to your host computer using USB.
+#. If using UF2, connect the board to your host computer using USB.
 
 #. Tap the reset button twice quickly to enter bootloader mode.
    A mass storage device named `FTHR840BOOT` for (Express) or
@@ -170,11 +178,11 @@ Flashing
 
 .. tabs::
 
-   .. group-tab:: Express
+   .. group-tab:: Express UF2
 
       .. zephyr-app-commands::
          :zephyr-app: samples/basic/blinky
-         :board: adafruit_feather_nrf52840
+         :board: adafruit_feather_nrf52840_express_uf2
          :goals: flash
          :compact:
 
