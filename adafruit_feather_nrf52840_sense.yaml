@@ -1,0 +1,23 @@
+identifier: adafruit_feather_nrf52840_sense
+name: Adafruit Feather nRF52840 Sense
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - usb_cdc
+  - ble
+  - gpio
+  - watchdog
+  - counter
+  - feather_serial
+  - feather_i2c
+  - feather_spi
+  - pwm
+vendor: adafruit
