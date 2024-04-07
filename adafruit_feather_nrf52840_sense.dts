@@ -27,6 +27,14 @@
 	};
 };
 
+&i2c0 {
+	SHT3XD: sht3xd@44 {
+		compatible = "sensirion,sht3xd";
+		reg = <0x44>;
+		label = "SHT3XD";
+	};
+};
+
 &flash0 {
 	partitions {
 		compatible = "fixed-partitions";
